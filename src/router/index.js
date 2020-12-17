@@ -8,7 +8,14 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: '令狐张豪-博客',
+      content: {
+        keywords: '令狐张豪、博客',
+        description: ''
+      }
+    }
   },
   // {
   //   path: '/about',

@@ -7,7 +7,7 @@
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,5 +20,7 @@ body,html,a,p,b,span,h1,h2,h3,ul,ol,li,em,div{
 }
 body{
 	background: #f6f8fa;
+	// background: url(./images/bg.gif) no-repeat;
+	// background-size: 100% 100%;
 }
 </style>
