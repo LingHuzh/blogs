@@ -6,7 +6,7 @@
 		</div>
 		<div class="lh_nav_right">
 			<router-link to="/" lang="span">个人简历</router-link>
-			<router-link to="/" lang="span">个人博客</router-link>
+			<router-link to="/blogs" lang="span">个人博客</router-link>
 			<router-link to="/" lang="span">个人作品</router-link>
 			<a href="javascript:;" @click="open">我的相册</a>
 			<router-link to="/" lang="span">我的资源</router-link>
@@ -26,7 +26,7 @@
 		},
 		methods: {
 			open() {
-				this.$prompt("请输入密码", "提示", {
+				this.$prompt("请输入访问密码", "提示", {
 						confirmButtonText: "确定",
 						cancelButtonText: "取消",
 					})
