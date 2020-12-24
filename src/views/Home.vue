@@ -20,15 +20,39 @@
 				<div class="lh_home_gif">
 					<img src="../images/xiaoxin.gif" alt="">
 				</div>
+				<div style="width: 100%;height: 30px;"></div>
 			</div>
-			<div class="li_home_main_right">
+			
+			<div class="li_home_main_right" :style="height">
 				<div style="width: 100%;height: 80px;"></div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
+				<div class="li_home_main_right_user">
+					<h3>个人信息</h3>
+				</div>
 				<div class="li_home_main_right_user">
 					<h3>个人信息</h3>
 				</div>
 			</div>
 		</section>
-		<Footer/>
+		<div style="width: 100%;height: 30px;"></div>
+		<Footer />
 	</div>
 </template>
 
@@ -66,10 +90,12 @@
 		width: 100%;
 		height: 100%;
 		display: flex;
+		overflow: auto;
 	}
 
 	.li_home_main_left {
-		width: 18%;
+		width: 20%;
+		overflow: auto;
 		background: #FFFFFF;
 		border-right: 1px solid #DCDFE6;
 
@@ -98,13 +124,22 @@
 			}
 		}
 	}
-
+	.li_home_main_left::-webkit-scrollbar,.li_home_main_right::-webkit-scrollbar {
+	    width: 5px;
+	}
+	
+	.li_home_main_left::-webkit-scrollbar-thumb,.li_home_main_right::-webkit-scrollbar {
+	    background-color: #B8B8DC;
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+	}
 	.li_home_main_left ul li a:hover {
 		color: red;
 	}
 
 	.li_home_main_right {
 		width: 100%;
+		overflow: auto;
 		// background: rgba(153,204,255,.3);
 	}
 
@@ -116,14 +151,16 @@
 			margin: 10px auto 0;
 		}
 	}
-	.li_home_main_right_user{
+
+	.li_home_main_right_user {
 		width: 80%;
 		height: 200px;
 		border-radius: 5px;
 		background: #FFFFFF;
 		box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.08);
 		margin: 30px auto;
-		h3{
+
+		h3 {
 			color: darkcyan;
 			padding: 20px 30px;
 		}

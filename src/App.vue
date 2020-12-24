@@ -6,6 +6,7 @@
 </template>
 
 <style lang="scss">
+@import url("//unpkg.com/element-ui@2.14.1/lib/theme-chalk/index.css");
 #app {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +21,8 @@ body,html,a,p,b,span,h1,h2,h3,ul,ol,li,em,div{
 }
 body{
 	background: #f6f8fa;
-	// background: url(./images/bg.gif) no-repeat;
-	// background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 </style>

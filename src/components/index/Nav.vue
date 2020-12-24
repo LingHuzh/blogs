@@ -11,6 +11,7 @@
 			<a href="javascript:;" @click="open">我的相册</a>
 			<router-link to="/" lang="span">我的资源</router-link>
 		</div>
+		<el-button type="primary" icon="el-icon-full-screen" @click="launchFullscreen()">全屏</el-button>
 	</div>
 </template>
 
@@ -25,6 +26,7 @@
 			};
 		},
 		methods: {
+			// 访问我的相册权限
 			open() {
 				this.$prompt("请输入访问密码", "提示", {
 						confirmButtonText: "确定",
@@ -46,6 +48,19 @@
 
 					});
 			},
+			//切换为全屏展示
+			launchFullscreen() {
+				var element = document.documentElement;
+				if (element.requestFullscreen) {
+					element.requestFullscreen();
+				} else if (element.mozRequestFullScreen) {
+					element.mozRequestFullScreen();
+				} else if (element.webkitRequestFullscreen) {
+					element.webkitRequestFullscreen();
+				} else if (element.msRequestFullscreen) {
+					element.msRequestFullscreen();
+				}
+			}
 		},
 	};
 </script>
@@ -54,7 +69,7 @@
 	.lh_nav {
 		width: 100%;
 		height: 80px;
-		background: #24292e;
+		background: #B8B8DC;
 		color: #ffffff;
 		font-size: 28px;
 		display: flex;
@@ -62,8 +77,6 @@
 		justify-content: space-between;
 		position: fixed;
 		top: 0;
-		left: 0;
-		z-index: 100;
 	}
 
 	.lh_nav_left {
@@ -71,6 +84,7 @@
 		height: 100%;
 		display: flex;
 		align-items: center;
+
 		img {
 			display: block;
 			width: 60px;
@@ -85,7 +99,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-right: 10%;
+
 		a {
 			color: #ffffff;
 			font-size: 18px;
@@ -97,5 +111,9 @@
 			// border: 1px solid darkgray;
 			border-radius: 10px;
 		}
+	}
+
+	.el-button--primary {
+		margin-right: 3%;
 	}
 </style>

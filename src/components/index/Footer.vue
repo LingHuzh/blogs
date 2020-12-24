@@ -13,12 +13,14 @@
 <style lang="scss" scoped>
     .lh_footer{
         width: 100%;
-        height: 50px;
+        height: 30px;
         text-align: center;
-        line-height: 50px;
-        background: #24292e;
+        line-height: 30px;
+        background: #B8B8DC;
 		font-size: 11px;
 		color: #FFFFFF;
 		letter-spacing: 1px;
+		position: fixed;
+		bottom: 0;
     }
 </style>
