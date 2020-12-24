@@ -28,27 +28,6 @@
 				<div class="li_home_main_right_user">
 					<h3>个人信息</h3>
 				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
-				<div class="li_home_main_right_user">
-					<h3>个人信息</h3>
-				</div>
 			</div>
 		</section>
 		<div style="width: 100%;height: 30px;"></div>

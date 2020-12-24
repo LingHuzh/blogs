@@ -9,7 +9,7 @@ const routes = [{
 		name: 'Home',
 		component: Home,
 		meta: {
-			title: '令狐张豪-博客',
+			title: '新之助的痕迹',
 			content: {
 				keywords: '令狐张豪、博客',
 				description: ''
