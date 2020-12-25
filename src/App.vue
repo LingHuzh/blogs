@@ -11,6 +11,7 @@
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 1800px;
 }
 body,html,a,p,b,span,h1,h2,h3,ul,ol,li,em,div{
   margin: 0;
@@ -23,6 +24,6 @@ body{
 	background: #f6f8fa;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: auto
 }
 </style>

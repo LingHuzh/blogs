@@ -22,13 +22,34 @@
 				</div>
 				<div style="width: 100%;height: 30px;"></div>
 			</div>
-			
-			<div class="li_home_main_right" :style="height">
+
+			<!-- 			<div class="li_home_main_right" :style="height">
 				<div style="width: 100%;height: 80px;"></div>
 				<div class="li_home_main_right_user">
 					<h3>个人信息</h3>
+					<div class="li_home_main_right_user_header">
+						<span>姓名：令狐张豪</span>
+						<span>工作经验：3年</span>
+					</div>
+					<div class="li_home_main_right_user_header">
+						<span>邮箱：linghuzhanghao@163.com</span>
+						<span>电话：173-1006-7051</span>
+					</div>
+					<div class="li_home_main_right_user_header">
+						<span>学历：本科</span>
+						<span></span>
+					</div>
+					<h3>求职意向</h3>
+					<div class="li_home_main_right_user_header">
+						<span>期望职位：web前端开发</span>
+						<span>目标薪资：13k</span>
+					</div>
+					<div class="li_home_main_right_user_header">
+						<span>工作性质：全职</span>
+						<span></span>
+					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		<div style="width: 100%;height: 30px;"></div>
 		<Footer />
@@ -50,7 +71,8 @@
 			return {
 				height: {
 					height: window.innerHeight + 'px'
-				}
+				},
+				windowWidth: window.innerWidth
 			}
 		},
 		mounted() {
@@ -59,9 +81,16 @@
 				that.height = {
 					height: window.innerHeight + 'px'
 				}
+				that.windowWidth = window.innerWidth
 			}
-		},
-
+			// this.$jsonp('http://www.linghuzh.cn:8081/home.json')
+			// .then((res)=>{
+			// 	console.log(res)
+			// })
+			// .catch((res)=>{
+			// 	console.log(res)
+			// })
+		}
 	}
 </script>
 <style lang="scss" scoped>
@@ -103,15 +132,19 @@
 			}
 		}
 	}
-	.li_home_main_left::-webkit-scrollbar,.li_home_main_right::-webkit-scrollbar {
-	    width: 5px;
+
+	.li_home_main_left::-webkit-scrollbar,
+	.li_home_main_right::-webkit-scrollbar {
+		width: 5px;
 	}
-	
-	.li_home_main_left::-webkit-scrollbar-thumb,.li_home_main_right::-webkit-scrollbar {
-	    background-color: #B8B8DC;
-	    border-radius: 10px;
-	    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+
+	.li_home_main_left::-webkit-scrollbar-thumb,
+	.li_home_main_right::-webkit-scrollbar {
+		background-color: #B8B8DC;
+		border-radius: 10px;
+		-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
 	}
+
 	.li_home_main_left ul li a:hover {
 		color: red;
 	}
@@ -132,8 +165,7 @@
 	}
 
 	.li_home_main_right_user {
-		width: 80%;
-		height: 200px;
+		width: 70%;
 		border-radius: 5px;
 		background: #FFFFFF;
 		box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.08);
@@ -142,6 +174,25 @@
 		h3 {
 			color: darkcyan;
 			padding: 20px 30px;
+		}
+	}
+
+	.hide_active {
+		display: none;
+	}
+
+	.li_home_main_right_user_header {
+		width: 100%;
+		height: 50px;
+		padding: 0px 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		span {
+			width: 300px;
+			color: #555555;
+			font-size: 18px;
 		}
 	}
 </style>

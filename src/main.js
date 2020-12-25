@@ -5,8 +5,12 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'swiper/css/swiper.css'
-
+import axios from 'axios'
+Vue.prototype.$axios = axios
+import { VueJsonp } from 'vue-jsonp'  
+ 
 Vue.use(ElementUI);
+Vue.use(VueJsonp)
 
 Vue.config.productionTip = false
 

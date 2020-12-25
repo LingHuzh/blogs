@@ -97,9 +97,6 @@ export default {
         this.days.push(dayobjectOther)
       }
     },
-    getDayTime (el) {
-      alert(el)
-    },
     pickPre: function (year, month) {
       // setDate(0); 上月最后一天
       // setDate(-1); 上月倒数第二天

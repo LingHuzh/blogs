@@ -7,7 +7,7 @@
 		<div class="lh_nav_right">
 			<router-link to="/" lang="span">个人简历</router-link>
 			<router-link to="/blogs" lang="span">个人博客</router-link>
-			<router-link to="/" lang="span">个人作品</router-link>
+			<router-link to="/production" lang="span">个人作品</router-link>
 			<a href="javascript:;" @click="open">我的相册</a>
 			<router-link to="/" lang="span">我的资源</router-link>
 		</div>
@@ -22,7 +22,8 @@
 		data() {
 			return {
 				name: "LingHuZhangHao",
-				photoPwd: 5494
+				photoPwd: 5494,
+				windowWidth: window.innerWidth
 			};
 		},
 		methods: {
@@ -77,6 +78,7 @@
 		justify-content: space-between;
 		position: fixed;
 		top: 0;
+		z-index: 99;
 	}
 
 	.lh_nav_left {
@@ -115,5 +117,17 @@
 
 	.el-button--primary {
 		margin-right: 3%;
+	}
+
+	.width_active {
+		width: 100%;
+	}
+	@media screen and(max-width:1080px){
+		.lh_nav_left{
+			display: none;
+		}
+		.lh_nav_right{
+			width: 100%;
+		}
 	}
 </style>
