@@ -9,7 +9,7 @@
 			<router-link to="/blogs" lang="span">个人博客</router-link>
 			<router-link to="/production" lang="span">个人作品</router-link>
 			<a href="javascript:;" @click="open">我的相册</a>
-			<router-link to="/" lang="span">我的资源</router-link>
+			<router-link to="/information" lang="span">我的资源</router-link>
 		</div>
 		<el-button type="primary" icon="el-icon-full-screen" @click="launchFullscreen()">全屏</el-button>
 	</div>

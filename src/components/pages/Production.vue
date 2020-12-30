@@ -62,13 +62,7 @@
 					</li>
 				</ul>
 			</div>
-			<el-dialog title="提示" :visible.sync="centerDialogVisible" width="30%" center>
-				<span>需要注意的是内容是默认不居中的</span>
-				<span slot="footer" class="dialog-footer">
-					<el-button @click="centerDialogVisible = false">取 消</el-button>
-					<el-button type="primary" @click="centerDialogVisible = false">确 定</el-button>
-				</span>
-			</el-dialog>
+			
 
 		</section>
 	</div>
@@ -195,17 +189,18 @@
 	.lh_production {
 		width: 100%;
 		height: 100%;
-		position: fixed;
+		position: absolute;
 		top: 80px;
 		background: url(../../images/bg.jpg) no-repeat;
 		background-position: center;
-		background-size: cover;
+		background-size: 100% 100%;
+		overflow-x: auto;
 	}
 
 	.lh_production_main {
 		width: 100%;
 		height: 100%;
-		position: fixed;
+		position: absolute;
 		background: rgba(255, 255, 255, .5);
 		z-index: 1;
 	}
