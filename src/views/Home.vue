@@ -23,7 +23,7 @@
 				<div style="width: 100%;height: 30px;"></div>
 			</div>
 
-			<!-- 			<div class="li_home_main_right" :style="height">
+				<div class="li_home_main_right" :style="height">
 				<div style="width: 100%;height: 80px;"></div>
 				<div class="li_home_main_right_user">
 					<h3>个人信息</h3>
@@ -48,10 +48,26 @@
 						<span>工作性质：全职</span>
 						<span></span>
 					</div>
+					<h3>专业技能</h3>
+					<div class="li_home_main_right_user_skill">
+						<p>熟练掌握 HTML CSS 基本布局以及 html5+css3 新属性，熟悉 W3C 标准</p>
+						<p>熟练 JavaScript、jquery 以及 ES6 常用语法</p>
+						<p>熟练 scss 、less预编译</p>
+						<p>熟练响应式布局和弹性盒模型，擅长 HTML 的 移动端 开发</p>
+						<p>熟练 ajax，axios 技术与后台处理数据</p>
+						<p>熟练使用 jQuery 、bootstrap、element UI、Vant、Echarts 等框架</p>
+						<p>熟练使用 Vue 全家桶（Vue-cli+Vue-store+vue-router+vuex+axios）</p>
+						<p>熟练使用Vue的SSR服务端渲染Nuxt.js框架</p>
+						<p>熟练使用微信小程序开发技术跟官方提供的WeUi框架进行小程序开发</p>
+						<p>熟练使用 git、svn进行代码管理</p>
+					</div>
 				</div>
-			</div> -->
+			</div>
 		</section>
 		<div style="width: 100%;height: 30px;"></div>
+		<el-button type="primary" class="ai_download">
+			<a href="">下载简历</a>
+		</el-button>
 		<Footer />
 	</div>
 </template>
@@ -94,6 +110,12 @@
 	}
 </script>
 <style lang="scss" scoped>
+	// 下载简历按钮
+	.ai_download{
+		position: fixed;
+		bottom: 8%;
+		right: 2%;
+	}
 	.li_home_main {
 		width: 100%;
 		height: 100%;
@@ -193,6 +215,15 @@
 			width: 300px;
 			color: #555555;
 			font-size: 18px;
+		}
+	}
+	.li_home_main_right_user_skill{
+		width: 100%;
+		padding: 0px 60px;
+		p{
+			color: #555555;
+			font-size: 16px;
+			line-height: 25px;
 		}
 	}
 </style>
