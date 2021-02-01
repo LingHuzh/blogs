@@ -6,10 +6,10 @@
 		</div>
 		<div class="lh_nav_right">
 			<router-link to="/" lang="span">个人简历</router-link>
-			<router-link to="/blogs" lang="span">个人博客</router-link>
 			<router-link to="/production" lang="span">个人作品</router-link>
-			<a href="javascript:;" @click="open">我的相册</a>
-			<router-link to="/information" lang="span">我的资源</router-link>
+			<router-link to="" lang="span" @click="open">我的资源</router-link>
+			<a href="https://blog.csdn.net/LingHuzh?spm=1000.2115.3001.5343" target="_blank">个人博客</a>
+			<a href="/relation">联系作者</a>
 		</div>
 		<el-button type="primary" icon="el-icon-full-screen" @click="launchFullscreen()">全屏</el-button>
 	</div>
@@ -38,7 +38,7 @@
 					}) => { //点击确定
 						if (value == this.photoPwd) {
 							const photo = this.$router.resolve({
-								path: '/'
+								path: '/information'
 							});
 							window.location.href = photo.href;
 						} else {

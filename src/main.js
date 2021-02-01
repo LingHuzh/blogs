@@ -5,12 +5,23 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'swiper/css/swiper.css'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+import 'vant/lib/vant.js'
+
+
+import { Popup } from 'vant';
+import { Toast } from 'vant';
+
 import axios from 'axios'
 Vue.prototype.$axios = axios
 import { VueJsonp } from 'vue-jsonp'  
  
 Vue.use(ElementUI);
 Vue.use(VueJsonp)
+Vue.use(Vant);
+Vue.use(Popup);
+Vue.use(Toast);
 
 Vue.config.productionTip = false
 

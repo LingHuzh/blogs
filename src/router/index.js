@@ -51,6 +51,18 @@ const routes = [{
 				description: ''
 			}
 		}
+	},
+	{
+		path: '/relation',
+		name: 'relation',
+		component: () => import('../components/pages/Relation.vue'),
+		meta: {
+			title: '令狐张豪-联系作者-web前端工程师简历',
+			content: {
+				keywords: '令狐张豪、个人简历、web前端工程师、web前端工程师简历',
+				description: ''
+			}
+		}
 	}
 ]
 
